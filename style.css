@@ -7,10 +7,12 @@
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
-img{
+
+img {
     max-width: 100%;
 }
-.btn-primary{
+
+.btn-primary {
     height: 64px;
     color: #fff;
     background: #FF900E;
@@ -18,6 +20,7 @@ img{
     border-radius: 8px;
     border: none;
 }
+
 h1,
 h2,
 h3 {
@@ -25,21 +28,38 @@ h3 {
     color: #131313;
 
 }
-p{
+
+p {
     font-size: 16px;
     color: #727272;
 }
-main{
+
+main {
     margin: 0 240px;
 }
-section{
-    padding: 130px 0;
+
+section {
+    margin-top: 130px;
 }
+
+.section-title {
+    font-size: 45px;
+}
+
+.primary-color{
+    color: #FF900E;
+}
+.dark-light{
+    color: #727272;
+    font-weight: 400;
+}
+
 /* header area styles */
-header{
+header {
     padding: 50px 240px;
     background: rgba(255, 144, 14, 0.1);
 }
+
 header h2 {
     font-size: 45px;
 }
@@ -65,37 +85,125 @@ nav li a {
     font-weight: 500;
     font-size: 18px;
 }
+
 /* hero area css */
-.hero-area{
+.hero-area {
     padding-top: 100px;
     text-align: center;
 }
-.hero-area h1{
-    font-size: font-size: 64px;;
+
+.hero-area h1 {
+    font-size: 64px;
 }
-.hero-area p{
+
+.hero-area p {
     padding: 30px 0;
 }
-.hero-area img{
+
+.hero-area img {
     margin-top: 50px;
 }
 
 /* about us css */
-.about-us{
+.about-us {
     display: flex;
     align-items: center;
     gap: 72px;
 }
+
 .team-members {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
 .member {
     width: 250px;
     height: 250px;
 }
-.about-info p{
+
+.about-info p {
     padding: 20px 0;
 }
 
+/* feature area css */
+section.features-area {
+    display: flex;
+    gap: 100px;
+}
+
+.feature-details {}
+
+.feature-details h2 {
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+    margin-bottom: 24px;
+}
+
+.feature {
+    padding: 20px;
+    box-shadow: 0 4px 4px 2px rgb(0 0 0 / 25%);
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+.experience-box {
+    background: #FF900E;
+    color: #fff;
+    width: 342px;
+    padding: 42px;
+}
+
+.facts-list {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 40px;
+    margin-left: 50px;
+}
+
+.fact {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 30px 15px;
+    width: 241px;
+}
+
+.fact h2 {
+    padding: 10px 0;
+    font-size: 20px;
+    color: #424242;
+}
+
+/* sponsors area */
+.sponsors-images {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsors-images img {
+    height: 50px;
+    filter: grayscale(1);
+}
+
+.sponsors-area {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+section.sponsors-area p {
+    margin-top: 20px;
+}
+
+/* footer area css */
+footer {
+    color: #424242;
+    font-size: 18px;
+    text-align: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin: 0 240px;
+    padding: 40px 0;
+}
