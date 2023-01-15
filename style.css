@@ -1,0 +1,101 @@
+/* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+/* common styles */
+
+* {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.btn-primary{
+    height: 64px;
+    color: #fff;
+    background: #FF900E;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+}
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    color: #131313;
+
+}
+p{
+    font-size: 16px;
+    color: #727272;
+}
+main{
+    margin: 0 240px;
+}
+section{
+    padding: 130px 0;
+}
+/* header area styles */
+header{
+    padding: 50px 240px;
+    background: rgba(255, 144, 14, 0.1);
+}
+header h2 {
+    font-size: 45px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+}
+/* hero area css */
+.hero-area{
+    padding-top: 100px;
+    text-align: center;
+}
+.hero-area h1{
+    font-size: font-size: 64px;;
+}
+.hero-area p{
+    padding: 30px 0;
+}
+.hero-area img{
+    margin-top: 50px;
+}
+
+/* about us css */
+.about-us{
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.member {
+    width: 250px;
+    height: 250px;
+}
+.about-info p{
+    padding: 20px 0;
+}
+
