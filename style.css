@@ -7,9 +7,8 @@
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
-
-img {
-    max-width: 100%;
+a{
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -35,15 +34,15 @@ p {
 }
 
 main {
-    margin: 0 240px;
+    margin: 0 200px;
 }
 
 section {
-    margin-top: 130px;
+    margin-top: 100px;
 }
 
 .section-title {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .primary-color{
@@ -56,7 +55,7 @@ section {
 
 /* header area styles */
 header {
-    padding: 50px 240px;
+    padding: 50px 200px;
     background: rgba(255, 144, 14, 0.1);
 }
 
@@ -80,10 +79,10 @@ nav li {
 }
 
 nav li a {
-    text-decoration: none;
     color: #424242;
     font-weight: 500;
     font-size: 18px;
+    text-align: center;
 }
 
 /* hero area css */
@@ -102,6 +101,7 @@ nav li a {
 
 .hero-area img {
     margin-top: 50px;
+    width: 100%;
 }
 
 /* about us css */
@@ -117,9 +117,8 @@ nav li a {
     gap: 20px;
 }
 
-.member {
+.member img {
     width: 250px;
-    height: 250px;
 }
 
 .about-info p {
@@ -127,12 +126,17 @@ nav li a {
 }
 
 /* feature area css */
-section.features-area {
+.features-area {
     display: flex;
-    gap: 100px;
+    gap: 40px;
+    align-items: center;
 }
 
-.feature-details {}
+.features-area img {
+    width: 500px;
+    margin-left: 80px;
+    margin-bottom: -80px;
+}
 
 .feature-details h2 {
     border-left: 5px solid #FF900E;
@@ -153,10 +157,21 @@ section.features-area {
 .experience-box {
     background: #FF900E;
     color: #fff;
-    width: 342px;
-    padding: 42px;
+    padding: 30px;
+    width: 155PX;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+.experience-box h1 {
+    color: #fff;
+    font-size: 40px;
 }
 
+.experience-box p {
+    color: #fff;
+}
+/* facts area styles */
 .facts-list {
     margin-top: 80px;
     display: flex;
@@ -166,13 +181,17 @@ section.features-area {
     margin-left: 50px;
 }
 
+
 .fact {
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 30px 15px;
     width: 241px;
+    transition: .3s;
 }
-
+.fact:hover {
+    box-shadow: 0 4px 4px 2px rgb(0 0 0 / 25%);
+}
 .fact h2 {
     padding: 10px 0;
     font-size: 20px;
@@ -187,13 +206,16 @@ section.features-area {
 }
 
 .sponsors-images img {
-    height: 50px;
+    transition: .3s;
     filter: grayscale(1);
+}
+.sponsors-images img:hover {
+    filter: grayscale(0);
 }
 
 .sponsors-area {
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 
 section.sponsors-area p {
@@ -204,9 +226,89 @@ section.sponsors-area p {
 footer {
     color: #424242;
     font-size: 18px;
-    text-align: center;
     background: #FFF4E7;
     border-radius: 8px;
-    margin: 0 240px;
-    padding: 40px 0;
+    padding: 40px 200px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-info li{
+    list-style: none;
+}
+.footer-description {
+    width: 400px;
+}
+.footer-info li a {
+    color: #727272;
+    font-size: 16px;
+}
+
+.footer-info h4 {
+    margin: 20px 0;
+}
+footer p.copywright-text{
+    margin-top: 40px;
+    text-align: center;
+}
+/* media queries for mobile devices */
+@media (max-width: 767.98px) {
+    .section-title {
+        font-size: 30px;
+    }
+    
+    img{
+        width: 100% !important;
+    }
+    main, footer {
+        margin: 0;
+        padding: 25px;
+    }
+    
+    section {
+        margin-top: 80px;
+    }
+    header {
+        padding: 25px;
+    }
+    nav, nav ul, .about-us, .features-area, .facts-list, .sponsors-images, .footer-info  {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul{
+        margin-top: 20px;
+    }
+    .hero-area {
+        padding-top: 50px;
+    }
+    .hero-area h1 {
+        font-size: 40px;
+    }
+    .features-area img{
+        margin-left:0;
+    }
+    .facts-list{
+        margin-left: 0;
+    }
+    .fact img {
+        width: 40px !important;
+    }
+    .sponsors-images{
+        align-items: center;
+        gap: 40px;
+    }
+    .sponsors-images img {
+        margin-bottom: 20px;
+        width: 50% !important;
+    }
+    .footer-description {
+        width: 100%;
+    }
+    
 }
